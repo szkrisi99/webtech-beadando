@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script type="text/javascript" rel="script" src="js/addCar.js"></script>
+    <form method="post" action="/addCar" onsubmit="addCar(event)">
+        <table id="carsform">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Consumption:</td>
+                <td><input type="text" name="consumption" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Color:</td>
+                <td><input type="color" name="color" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Manufacturer:</td>
+                <td><input type="text" name="manufacturer" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Available:</td>
+                <td><input type="number" name="avaiable" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Year:</td>
+                <td><input type="number" name="year" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Horsepower:</td>
+                <td><input type="number" name="horsepower" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <input type="submit" name="insert" id="addsubmit" value="Add Car">
+            </tr>
+        </table>
+        
+    </form>
+</html>

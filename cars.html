@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="js/loadCars.js" type="text/javascript"></script>
+<script src="js/deleteCar.js" type="text/javascript"></script>
+<script src="js/updateCar.js" type="text/javascript"></script>
+<form id="deleteForm" method="post" action="/deleteCar" onsubmit="deleteCar(event)">
+    <table>
+         <tr>
+             <th>Delete car by ID:</th>
+             <th><input type="text" name="_id" autofocus/></th>
+             <th><input id="submitbutton" type="submit" value="Delete" autofocus/></th>
+         </tr>    
+     </table>
+</form>
+
+<table id="carsTable">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Consumption</th>
+            <th>Color</th>
+            <th>Manufacturer</th>
+            <th>Avaiable</th>
+            <th>Year</th>
+            <th>Horsepower</th>
+            <th>Update</th>
+        </tr>
+    </table>
+    
+    <div id="modify" class="popup">
+
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <h2>Modifying record:</h2>
+          <h4 id="modifyBase" style="display: inline;">: </h4><p style="display:inline;"> - </p><p id=modifyId style="display: inline;"></p>
+          <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Consumption:</td>
+                <td><input type="text" name="consumption" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Color:</td>
+                <td><input type="text" name="color" required="required" autofocus/></td>
+           
+            </tr>
+            <tr>
+                <td>Manufacturer:</td>
+                <td><input type="text" name="manufacturer" required="required" autofocus/>
+            </tr>
+            <tr>
+                <td>Available:</td>
+                <td><input type="number" name="avaiable" min="0" required="required"/></td>
+            </tr>
+            <tr>
+                <td>Year:</td>
+                <td><input type="number" name="year" min="1900" max="2020" required="required"/></td>
+            </tr>
+            <tr>
+                <td>Horsepower:</td>
+                <td><input type="number" name="horsepower" min="0" required="required"/></td>
+            </tr>
+            <tr>
+                <td><input type="submit" onclick="modifyRecord()" name="insert" value="Update Car"></td>
+            </tr>
+        </table>
+        </div>
+      
+      </div>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script type="text/javascript" rel="script" src="js/addManufacturer.js"></script>
+    <form method="post" action="/addManufacturer" onsubmit="addManufacturer(event)">
+        <table id="manufacturersform">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><input type="text" name="country" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Founded:</td>
+                <td><input type="number" name="founded" required="required" autofocus/></td>
+            </tr>
+        </table>
+        <input id="addsubmitm" type="submit" name="insert" value="Add">
+    </form>
+</html>
